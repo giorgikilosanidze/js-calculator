@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <input type="text" name="input_field" class="input">
+            <div class="main_div">
+                <div class="btn_div">
+                    <input type="button" value="AC" class="btn" onclick="deleteAll()">
+                    <input type="button" value="DE" class="btn" onclick="deleteOne()">
+                    <input type="button" value="." class="btn" onclick="input_field.value += '.'">
+                    <input type="button" value="/" class="btn" onclick="click3('/')">
+                </div>
+                <div class="btn_div">
+                    <input type="button" value="7" class="btn" onclick="input_field.value += '7'">
+                    <input type="button" value="8" class="btn" onclick="click3(8)">
+                    <input type="button" value="9" class="btn" onclick="input_field.value += '9'">
+                    <input type="button" value="*" class="btn" onclick="click3('*')">
+                </div>
+                <div class="btn_div">
+                    <input type="button" value="4" class="btn" onclick="click3(4)">
+                    <input type="button" value="5" class="btn" onclick="input_field.value += '5'">
+                    <input type="button" value="6" class="btn" onclick="input_field.value += '6'">
+                    <input type="button" value="-" class="btn" onclick="input_field.value += '-'">
+                </div>
+                <div class="btn_div">
+                    <input type="button" value="1" class="btn" onclick="click3(1)">
+                    <input type="button" value="2" class="btn" onclick="input_field.value += '2'">
+                    <input type="button" value="3" class="btn" onclick="click3(3)">
+                    <input type="button" value="+" class="btn" onclick="click3('+')">
+                </div>
+                <div class="btn_div">
+                    <input type="button" value="00" class="btn" onclick="input_field.value += '00'">
+                    <input type="button" value="0" class="btn" onclick="input_field.value += '0'">
+                    <input type="button" value="=" class="btn btn2" onclick="evaluation()">
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+
+</body>
+
+</html>
