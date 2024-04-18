@@ -1,6 +1,8 @@
 const input = document.querySelector(".input");
 const btn = document.querySelectorAll(".btn");
 
+// example 1
+
 // function click() {
 //     for (let i = 0; i < btn.length; i++) {
 //         btn[i].addEventListener("click", (e) => {
@@ -21,6 +23,8 @@ const btn = document.querySelectorAll(".btn");
 // click();
 
 
+// example 2
+
 // function click2() {
 //     btn.forEach((i) => {
 //         i.addEventListener("click", (e) => {
@@ -38,6 +42,9 @@ const btn = document.querySelectorAll(".btn");
 //     });
 // };
 // click2();
+
+
+// example 3
 
 function click3(number) {
     input.value += number;
